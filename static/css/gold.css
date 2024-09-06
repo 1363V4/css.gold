@@ -1,0 +1,187 @@
+@layer reset, default, layouts, utilities;
+
+@layer reset {	
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	
+	* {
+		margin: 0;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+		
+	body {
+		-webkit-font-smoothing: antialiased;
+	}
+
+	img, picture, video, canvas, svg {
+		display: block;
+		max-width: 100%;
+	}
+
+	input, button, textarea, select {
+		font: inherit;
+	}
+
+	p, h1, h2, h3, h4, h5, h6 {
+		text-wrap: pretty;
+		overflow-wrap: break-word;
+	}
+}
+
+@layer default {
+	:root {
+		--phi: calc((1 + sqrt(5)) / 2);
+		--m: 1rem;
+		--xxs: calc(var(--m) * pow(var(--phi), -3));
+		--xs: calc(var(--m) * pow(var(--phi), -2));
+		--s: calc(var(--m) * pow(var(--phi), -1));
+		--l: calc(var(--m) * pow(var(--phi), 1));
+		--xl: calc(var(--m) * pow(var(--phi), 2));
+		--xxl: calc(var(--m) * pow(var(--phi), 3));
+		--xxxl: calc(var(--m) * pow(var(--phi), 4));
+		--t: 1s;
+		--t-xxs: calc(var(--t) * pow(var(--phi), -3));
+		--t-xs: calc(var(--t) * pow(var(--phi), -2));
+		--t-s: calc(var(--t) * pow(var(--phi), -1));
+		--t-l: calc(var(--t) * pow(var(--phi), 1));
+		--t-xl: calc(var(--t) * pow(var(--phi), 2));
+		--t-xxl: calc(var(--t) * pow(var(--phi), 3));
+		--t-xxxl: calc(var(--t) * pow(var(--phi), 4));
+	}
+
+	h1 {
+		font-size: var(--xxxl);
+	}
+	h2 {
+		font-size: var(--xxl);
+	}
+	h3 {
+		font-size: var(--xl);
+	}
+	h4 {
+		font-size: var(--l);
+	}
+	h5, h6, p {
+		font-size: var(--m);
+	}
+}
+
+@layer layouts {
+	.gold-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.gold-center > * {
+		width: 61.8%;
+		text-align: center;
+	}
+
+	.gg-01 {
+		display: grid;
+		grid-template-columns: minmax(1rem, 1fr) minmax(1.618rem, 1.618fr);
+		grid-auto-rows: 1fr;
+		align-items: center;
+		align-content: center;
+	}	
+	.gg-10 {
+		display: grid;
+		grid-template-columns: minmax(1.618rem, 1.618fr) minmax(1rem, 1fr);
+		grid-auto-rows: 1fr;
+		align-items: center;
+		align-content: center;
+	}	
+	.gg-01-v {
+		display: grid;
+		grid-template-rows: minmax(1rem, 1fr) minmax(1.618rem, 1.618fr);
+		grid-auto-columns: 1fr;
+		align-items: center;
+		align-content: center;
+	}	
+	.gg-10-v {
+		display: grid;
+		grid-template-rows: minmax(1.618rem, 1.618fr) minmax(1rem, 1fr);
+		grid-auto-columns: 1fr;
+		align-items: center;
+		align-content: center;
+	}
+
+	.stack {
+		display: flex;
+		flex-direction: column;
+		&.gap-s {
+			gap: var(--s);
+		}
+		&.gap-m {
+			gap: var(--m);
+		}
+		&.gap-l {
+			gap: var(--l);
+		}
+		&.gap-xl {
+			gap: var(--xl);
+		}
+		&.gap-xxl {
+			gap: var(--xxl);
+		}
+	}
+
+	.chain {
+		display: flex;
+		flex-direction: row;
+		&.gap-s {
+			gap: var(--s);
+		}
+		&.gap-m {
+			gap: var(--m);
+		}
+		&.gap-l {
+			gap: var(--l);
+		}
+		&.gap-xl {
+			gap: var(--xl);
+		}
+		&.gap-xxl {
+			gap: var(--xxl);
+		}
+	}
+}
+
+@layer utilities {
+	.p-s {
+		padding: var(--s);
+	}
+	.p-m {
+		padding: var(--m);
+	}
+	.p-l {
+		padding: var(--l);
+	}
+	
+	.m-s {
+		margin: var(--s);
+	}
+	.m-m {
+		margin: var(--m);
+	}
+	.m-l {
+		margin: var(--l);
+	}
+
+	.gold-0 {
+		flex: 1 auto;
+		min-width: 0;
+		min-height: 0;
+		overflow: hidden;
+	}
+	.gold-1 {
+		flex: var(--phi) auto;
+		min-width: 0;
+		min-height: 0;
+		overflow: hidden;
+	}
+}

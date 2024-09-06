@@ -1,0 +1,108 @@
+@import url('gold.css') layer(gold);
+
+
+:root {
+    --light: 1;
+    --phone: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light: 0;
+    }
+}
+
+@media (max-width: 610px) {
+    :root {
+        --phone: 1;
+    }
+}
+
+body {
+    font-family: Times, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: hsl(0, 0%, calc(100% - 100% * var(--light)));
+    text-align: center;
+}
+
+:root {
+    --hue: 60;
+    --gold-0: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), -3)));
+    --gold-1: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), -2)));
+    --gold-2: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), -1)));
+    --gold-3: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), 0)));
+    --gold-4: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), 1)));
+    --gold-5: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), 2)));
+    --gold-6: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), 3)));
+    --gold-7: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), 4)));
+}
+
+.gold-0 {
+    background-color: var(--gold-0);
+}
+.gold-1 {
+    background-color: var(--gold-1);
+}
+.gold-2 {
+    background-color: var(--gold-2);
+}
+.gold-3 {
+    background-color: var(--gold-3);
+}
+.gold-4 {
+    background-color: var(--gold-4);
+}
+.gold-5 {
+    background-color: var(--gold-5);
+}
+h1 {
+    color: var(--gold-5);
+}
+.gold-6 {
+    background-color: var(--gold-6);
+}
+.gold-7 {
+    background-color: var(--gold-7);
+}
+
+.hidden {
+    display: none;
+}
+
+.inverted {
+    filter: invert(1);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.inline {
+    width: 1em;
+    display: inline;
+}
+
+.break {
+    word-break: break-all;
+}
+
+.padded {
+    padding: 10%;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
