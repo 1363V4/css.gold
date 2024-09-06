@@ -2,6 +2,6 @@ TODO
 - stay cool man
 - choose font
 - add credits
-- link domain
 - animations
 - phone view
+- shill it out
