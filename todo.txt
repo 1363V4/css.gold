@@ -3,6 +3,5 @@ TODO
 - choose font
 - add credits
 - link domain
-- buy domain
 - animations
 - phone view
