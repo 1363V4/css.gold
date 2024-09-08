@@ -51,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const isPhone = getComputedStyle(document.documentElement).getPropertyValue('--phone').trim() === '1';
         document.querySelector('.phone').style.display = isPhone ? 'block' : 'none';
         document.querySelector('.desktop').style.display = isPhone ? 'none' : 'block';
+        if (isPhone) {
+            root.style.setProperty('--m', '0.6rem');
+        }
     }
 
     document.addEventListener('DOMContentLoaded', togglePhoneDesktop);
