@@ -1,0 +1,68 @@
+@import url('gold.css') layer(gold);
+
+:root {
+    --gold-1: #ffd700;
+    --gold-2: #DAA520;
+    --gold-3: #fffb00;
+    --gold-4: #ffc400;
+    --gold-5: #B3A2DE;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Times, sans-serif;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.links {
+    background-color: var(--gold-3);
+}
+
+.links > * {
+    text-align: center;
+    background-color: var(--gold-4);
+    container-type: inline-size;
+}
+
+.links > * > * {
+    font-size: 5cqmin;
+}
+
+.selected {
+    font-weight: bold;
+    background-color: var(--gold-5);
+}
+
+.texts {
+    background-color: var(--gold-1);
+}
+
+.texts > * {
+    background-color: var(--gold-2);
+    container-type: size;
+}
+
+.texts > * > * {
+    font-size: 5cqmin;
+}
