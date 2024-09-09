@@ -56,6 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.addEventListener('DOMContentLoaded', togglePhoneDesktop);
+    togglePhoneDesktop();
     window.addEventListener('resize', togglePhoneDesktop);
 });
