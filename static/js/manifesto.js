@@ -1,3 +1,13 @@
+var desktop = $("#desktop");
+var phone = $("#phone");
+if (window.innerWidth < 610) {
+    desktop.classList.add("hidden");
+    phone.classList.remove("hidden");
+} else {
+    desktop.classList.remove("hidden");
+    phone.classList.add("hidden");
+}
+
 var links = $$("a");
 var texts = $$("div[id*='text']");
 links.forEach(function(link) {
