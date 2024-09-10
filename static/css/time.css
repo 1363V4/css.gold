@@ -1,19 +1,19 @@
 @import url('gold.css') layer(gold);
 
 :root {
-    --shadow: #DAA520;
+    --shadow: #2064da;
 }
 
 body {
     height: 100vh;
     width: 100vw;
     font-family: Times, sans-serif;
+    filter: invert(1);
 }
 
 div {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 img {
@@ -40,5 +40,17 @@ img {
     animation: glow var(--t-l) infinite;
 }
 #img5 {
-    animation: glow var(--t-m) infinite;
+    animation: glow var(--t) infinite;
+}
+#img6 {
+    animation: glow var(--t-s) infinite;
+}
+#img7 {
+    animation: glow var(--t-xs) infinite;
+}
+#img8 {
+    animation: glow var(--t-xxs) infinite;
+}
+#img9 {
+    animation: glow var(--t-xxxs) infinite;
 }
