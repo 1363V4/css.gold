@@ -24,7 +24,7 @@ links.forEach(function(link) {
         texts.forEach(function(text) {
             text.classList.add("hidden");
         });
-        $(`div[id='${target}']`).classList.remove("hidden");
+        $(`#desktop div[id='${target}']`).classList.remove("hidden");
     });
 });
 
