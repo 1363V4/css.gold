@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
+img {
+    height: 100%;
+}
+
 :root {
     --hue: 60;
     --gold-0: hsl(var(--hue), 100%, calc(100% * var(--light) + pow(-1, var(--light)) * 20% * pow(var(--phi), -3)));
