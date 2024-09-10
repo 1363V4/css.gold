@@ -13,7 +13,7 @@ toggleDisplay();
 window.addEventListener('resize', toggleDisplay);
 
 var links = $$("a");
-var texts = $$("#desktop div[id*='text']");
+var texts = $$("div[id*='text']", desktop);
 links.forEach(function(link) {
     link.addEventListener("click", function() {
         links.forEach(function(link) {
@@ -24,7 +24,7 @@ links.forEach(function(link) {
         texts.forEach(function(text) {
             text.classList.add("hidden");
         });
-        $(`#desktop div[id='${target}']`).classList.remove("hidden");
+        $(`div[id='${target}']`, desktop).classList.remove("hidden");
     });
 });
 
