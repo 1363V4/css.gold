@@ -36,6 +36,7 @@
 	:root {
 		--phi: calc((1 + sqrt(5)) / 2);
 		--m: 1rem;
+		--xxxs: calc(var(--m) * pow(var(--phi), -4));
 		--xxs: calc(var(--m) * pow(var(--phi), -3));
 		--xs: calc(var(--m) * pow(var(--phi), -2));
 		--s: calc(var(--m) * pow(var(--phi), -1));
@@ -44,6 +45,7 @@
 		--xxl: calc(var(--m) * pow(var(--phi), 3));
 		--xxxl: calc(var(--m) * pow(var(--phi), 4));
 		--t: 1s;
+		--t-xxxs: calc(var(--t) * pow(var(--phi), -4));
 		--t-xxs: calc(var(--t) * pow(var(--phi), -3));
 		--t-xs: calc(var(--t) * pow(var(--phi), -2));
 		--t-s: calc(var(--t) * pow(var(--phi), -1));
