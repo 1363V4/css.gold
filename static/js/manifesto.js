@@ -1,12 +1,16 @@
 var desktop = $("#desktop");
 var phone = $("#phone");
-if (window.innerWidth < 610) {
-    desktop.classList.add("hidden");
-    phone.classList.remove("hidden");
-} else {
-    desktop.classList.remove("hidden");
-    phone.classList.add("hidden");
+function toggleDisplay() {
+    if (window.innerWidth < 610) {
+        desktop.classList.add("hidden");
+        phone.classList.remove("hidden");
+    } else {
+        desktop.classList.remove("hidden");
+        phone.classList.add("hidden");
+    }
 }
+toggleDisplay();
+window.addEventListener('resize', toggleDisplay);
 
 var links = $$("a");
 var texts = $$("div[id*='text']");
@@ -22,4 +26,13 @@ links.forEach(function(link) {
         });
         $(`div[id='${target}']`).classList.remove("hidden");
     });
+});
+
+var arrow = $("arrow");
+arrow.addEventListener("click", function() {
+    var nextSibling = arrow.nextElementSibling;
+    if (nextSibling) {
+        var currentNum = parseInt(nextSibling.getAttribute("data-num")) || 0;
+        nextSibling.setAttribute("data-num", currentNum + 1);
+    }
 });
