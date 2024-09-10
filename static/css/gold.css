@@ -83,28 +83,28 @@
 
 	.gg-01 {
 		display: grid;
-		grid-template-columns: minmax(1rem, 1fr) minmax(1.618rem, 1.618fr);
+		grid-template-columns: 1fr 1.618fr;
 		grid-auto-rows: 1fr;
 		align-items: center;
 		align-content: center;
 	}	
 	.gg-10 {
 		display: grid;
-		grid-template-columns: minmax(1.618rem, 1.618fr) minmax(1rem, 1fr);
+		grid-template-columns: 1.618fr 1fr;
 		grid-auto-rows: 1fr;
 		align-items: center;
 		align-content: center;
 	}	
 	.gg-01-v {
 		display: grid;
-		grid-template-rows: minmax(1rem, 1fr) minmax(1.618rem, 1.618fr);
+		grid-template-rows: 1fr 1.618fr;
 		grid-auto-columns: 1fr;
 		align-items: center;
 		align-content: center;
 	}	
 	.gg-10-v {
 		display: grid;
-		grid-template-rows: minmax(1.618rem, 1.618fr) minmax(1rem, 1fr);
+		grid-template-rows: 1.618fr 1fr;
 		grid-auto-columns: 1fr;
 		align-items: center;
 		align-content: center;
