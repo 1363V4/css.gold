@@ -14,9 +14,11 @@ div {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes glow {
@@ -25,18 +27,18 @@ div {
     }
 }
 
-#1 {
+#img1 {
     animation: glow var(--t-xxxl) infinite;
 }
-#2 {
+#img2 {
     animation: glow var(--t-xxl) infinite;
 }
-#3 {
+#img3 {
     animation: glow var(--t-xl) infinite;
 }
-#4 {
+#img4 {
     animation: glow var(--t-l) infinite;
 }
-#5 {
+#img5 {
     animation: glow var(--t-m) infinite;
 }
