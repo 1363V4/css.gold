@@ -1,9 +1,9 @@
 @import url('gold.css') layer(gold);
 
 :root {
-    --gold-1: #ffd700;
+    --gold-1: darkgrey;
     --gold-2: #DAA520;
-    --gold-3: #fffb00;
+    --gold-3: black;
     --gold-4: #ffc400;
     --gold-5: #B3A2DE;
 }

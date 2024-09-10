@@ -13,7 +13,7 @@ toggleDisplay();
 window.addEventListener('resize', toggleDisplay);
 
 var links = $$("a");
-var texts = $$("div[id*='text']");
+var texts = $$("#desktop div[id*='text']");
 links.forEach(function(link) {
     link.addEventListener("click", function() {
         links.forEach(function(link) {
@@ -32,6 +32,6 @@ var arrow = $("#arrow");
 var phone_text = $("#phone_text");
 arrow.addEventListener("click", function() {
     var currentNum = parseInt(phone_text.getAttribute("data-num")) || 1;
-    var nextNum = (currentNum % 3) + 1;
+    var nextNum = (currentNum % 13) + 1;
     phone_text.setAttribute("data-num", nextNum);
 });
