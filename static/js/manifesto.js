@@ -28,11 +28,10 @@ links.forEach(function(link) {
     });
 });
 
-var arrow = $("arrow");
+var arrow = $("#arrow");
+var phone_text = $("#phone_text");
 arrow.addEventListener("click", function() {
-    var nextSibling = arrow.nextElementSibling;
-    if (nextSibling) {
-        var currentNum = parseInt(nextSibling.getAttribute("data-num")) || 0;
-        nextSibling.setAttribute("data-num", currentNum + 1);
-    }
+    var currentNum = parseInt(phone_text.getAttribute("data-num")) || 1;
+    var nextNum = (currentNum % 3) + 1;
+    phone_text.setAttribute("data-num", nextNum);
 });
