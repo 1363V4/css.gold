@@ -73,6 +73,16 @@ a {
 
 #phone [data-num="1"] #text_1,
 #phone [data-num="2"] #text_2,
-#phone [data-num="3"] #text_3 {
+#phone [data-num="3"] #text_3,
+#phone [data-num="4"] #text_4,
+#phone [data-num="5"] #text_5,
+#phone [data-num="6"] #text_6,
+#phone [data-num="7"] #text_7,
+#phone [data-num="8"] #text_8,
+#phone [data-num="9"] #text_9,
+#phone [data-num="10"] #text_10,
+#phone [data-num="11"] #text_11,
+#phone [data-num="12"] #text_12,
+#phone [data-num="13"] #text_13 {
     display: block;
 }
