@@ -25,13 +25,13 @@
         --phone: 1;
         --m: 0.6rem;
     }
-  
+
     .phone {
-      display: block;
+        display: block;
     }
-  
+
     .desktop {
-      display: none;
+        display: none;
     }
 }
 

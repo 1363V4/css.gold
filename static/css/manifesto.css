@@ -11,18 +11,16 @@
 .phone {
     display: none;
 }
-
 .desktop {
     display: block;
 }
 
 @media (max-width: 610px) {
     .phone {
-      display: block;
+        display: block;
     }
-  
     .desktop {
-      display: none;
+        display: none;
     }
 }
 
@@ -47,10 +45,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hidden {
-    display: none;
 }
 
 .links {
