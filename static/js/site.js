@@ -46,16 +46,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const hue = Math.atan2(1.732050808 * (g - b), (2 * r - g - b)) * 57.295779513;
         root.style.setProperty('--hue', hue);
     });
-
-    function togglePhoneDesktop() {
-        const isPhone = getComputedStyle(document.documentElement).getPropertyValue('--phone').trim() === '1';
-        document.querySelector('.phone').style.display = isPhone ? 'block' : 'none';
-        document.querySelector('.desktop').style.display = isPhone ? 'none' : 'block';
-        if (isPhone) {
-            root.style.setProperty('--m', '0.6rem');
-        }
-    }
-
-    togglePhoneDesktop();
-    window.addEventListener('resize', togglePhoneDesktop);
 });

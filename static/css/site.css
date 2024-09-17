@@ -12,9 +12,26 @@
     }
 }
 
+.phone {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
 @media (max-width: 610px) {
     :root {
         --phone: 1;
+        --m: 0.6rem;
+    }
+  
+    .phone {
+      display: block;
+    }
+  
+    .desktop {
+      display: none;
     }
 }
 
