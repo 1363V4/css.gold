@@ -1,16 +1,5 @@
 var desktop = $("#desktop");
 var phone = $("#phone");
-function toggleDisplay() {
-    if (window.innerWidth < 610) {
-        desktop.classList.add("hidden");
-        phone.classList.remove("hidden");
-    } else {
-        desktop.classList.remove("hidden");
-        phone.classList.add("hidden");
-    }
-}
-toggleDisplay();
-window.addEventListener('resize', toggleDisplay);
 
 var links = $$("a");
 var texts = $$("div[id*='text']", desktop);
