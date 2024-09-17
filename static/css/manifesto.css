@@ -93,6 +93,10 @@ a {
     display: none;
 }
 
+.text:not(:target) {
+    display: none;
+}
+
 #phone [data-num="1"] #text_1,
 #phone [data-num="2"] #text_2,
 #phone [data-num="3"] #text_3,
