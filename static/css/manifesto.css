@@ -8,18 +8,18 @@
     --gold-5: #B3A2DE;
 }
 
-.phone {
+#phone {
     display: none;
 }
-.desktop {
+#desktop {
     display: block;
 }
 
 @media (max-width: 610px) {
-    .phone {
+    #phone {
         display: block;
     }
-    .desktop {
+    #desktop {
         display: none;
     }
 }
