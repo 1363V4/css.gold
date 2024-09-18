@@ -1,6 +1,5 @@
 TODO
 - stay cool man
-- choose font
+- choose font (svg)
 - add credits
-- timed page
 - shill it out

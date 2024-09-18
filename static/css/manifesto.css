@@ -87,7 +87,8 @@ a {
     display: none;
 }
 
-.text:not(:target) {
+.text:not(:target),
+:root:has(:target) #1 {
     display: none;
 }
 
