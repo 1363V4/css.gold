@@ -1,5 +1,12 @@
-var desktop = $("#desktop");
-var phone = $("#phone");
+var links = $$("a");
+links.forEach(function(link) {
+    link.addEventListener("click", function() {
+        links.forEach(function(link) {
+            link.parentNode.classList.remove("selected");
+        });
+        link.parentNode.classList.add("selected");
+    });
+});
 
 var arrow = $("#arrow");
 var phone_text = $("#phone_text");
