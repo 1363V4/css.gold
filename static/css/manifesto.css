@@ -63,6 +63,10 @@
     #arrow {
         background-color: var(--gold-5);
     }
+
+    #arrow img {
+        height: 29%;
+    }
     
     .text:not(:target) {
         display: none;
