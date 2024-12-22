@@ -1,108 +1,82 @@
 @import url('gold.css') layer(gold);
 
-:root {
-    --gold-1: darkgrey;
-    --gold-2: #DAA520;
-    --gold-3: black;
-    --gold-4: #ffc400;
-    --gold-5: #B3A2DE;
-}
-
-#phone {
-    display: none;
-}
-#desktop {
-    display: block;
-}
-
-@media (max-width: 610px) {
-    #phone {
-        display: block;
+@layer base {
+    :root {
+        --gold-1: darkgrey;
+        --gold-2: #DAA520;
+        --gold-3: black;
+        --gold-4: #ffc400;
+        --gold-5: #B3A2DE;
     }
-    #desktop {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        font-family: Times, sans-serif;
+    }
+
+    div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    a {
+        text-decoration: unset;
+        color: unset;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    #links {
+        background-color: var(--gold-3);
+    }
+    
+    #links > * {
+        text-align: center;
+        background-color: var(--gold-4);
+        container-type: inline-size;
+    }
+    
+    #links > * > * {
+        font-size: 5cqmin;
+    }
+    
+    #texts {
+        background-color: var(--gold-1);
+    }
+    
+    #texts > * {
+        background-color: var(--gold-2);
+        container-type: size;
+    }
+    
+    #texts > * > * {
+        font-size: 5cqmin;
+    }
+    
+    #arrow {
+        background-color: var(--gold-5);
+    }
+    
+    .text:not(:target) {
         display: none;
     }
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    font-family: Times, sans-serif;
-}
+@layer ux {
+    .selected {
+        font-weight: bold;
+        font-style: italic;
+        background-color: var(--gold-5);
+    }
 
-div {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-a {
-    text-decoration: unset;
-    color: unset;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.links {
-    background-color: var(--gold-3);
-}
-
-.links > * {
-    text-align: center;
-    background-color: var(--gold-4);
-    container-type: inline-size;
-}
-
-.links > * > * {
-    font-size: 5cqmin;
-}
-
-.selected {
-    font-weight: bold;
-    background-color: var(--gold-5);
-}
-
-.texts {
-    background-color: var(--gold-1);
-}
-
-.texts > * {
-    background-color: var(--gold-2);
-    container-type: size;
-}
-
-.texts > * > * {
-    font-size: 5cqmin;
-}
-
-#arrow {
-    height: 13%;
-}
-
-#phone_text div {
-    display: none;
-}
-
-.text:not(:target) {
-    display: none;
-}
-
-#phone [data-num="1"] #text_1,
-#phone [data-num="2"] #text_2,
-#phone [data-num="3"] #text_3,
-#phone [data-num="4"] #text_4,
-#phone [data-num="5"] #text_5,
-#phone [data-num="6"] #text_6,
-#phone [data-num="7"] #text_7,
-#phone [data-num="8"] #text_8,
-#phone [data-num="9"] #text_9,
-#phone [data-num="10"] #text_10,
-#phone [data-num="11"] #text_11,
-#phone [data-num="12"] #text_12,
-#phone [data-num="13"] #text_13 {
-    display: block;
+    .hidden {
+        display: none;
+    }
 }
