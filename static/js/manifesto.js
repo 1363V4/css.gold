@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         $("#links").classList.add("hidden");
         $("#arrow").addEventListener("click", function() {
             phoneDisplay = (phoneDisplay % 13) + 1;
-            console.log(phoneDisplay);
             updatePhone();
         });
         updatePhone();
