@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     } else {
-        document.body.style.height = `${window.innerHeight}px`;
         document.body.classList.add("gg-10-v");
         $("#links").classList.add("hidden");
         $("#arrow").addEventListener("click", function() {
