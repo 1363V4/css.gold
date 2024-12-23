@@ -10,14 +10,14 @@
     }
 
     body {
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         font-family: Times, sans-serif;
     }
 
     @media (max-width: 610px) {
         body {
-            height: 95vh;
+            height: 95%;
         }
     }
 
