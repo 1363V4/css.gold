@@ -4,6 +4,7 @@
 :root {
     --light: 1;
     --phone: 0;
+    --m: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
