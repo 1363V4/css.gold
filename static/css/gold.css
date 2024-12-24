@@ -111,6 +111,8 @@
 	.stack {
 		display: grid;
 		grid-auto-rows: auto;
+		align-items: center;
+        justify-items: center;
 		&.gap-s {
 			gap: var(--s);
 		}
@@ -126,6 +128,7 @@
 		display: grid;
 		grid-auto-flow: column;
 		grid-auto-columns: auto;
+		align-items: center;
 		&.gap-s {
 			gap: var(--s);
 		}
