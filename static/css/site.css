@@ -111,12 +111,6 @@ h1 {
     filter: invert(1);
 }
 
-.center {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
 img.inline {
     width: 1em;
     display: inline;
