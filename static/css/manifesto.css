@@ -58,10 +58,12 @@
     
     #arrow {
         background-color: var(--gold-5);
+        align-content: center;
     }
 
     #arrow img {
         height: 29%;
+        filter: invert(1);
     }
     
     .text:not(:target) {
