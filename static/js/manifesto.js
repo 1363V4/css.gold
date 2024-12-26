@@ -2,7 +2,7 @@ var phoneDisplay = 1;
 
 function updatePhone() {
     $$("#texts div").forEach(div => {
-        div.style.display = div.id === phoneDisplay.toString() ? "block" : "none";
+        div.style.display = div.id === phoneDisplay.toString() ? "grid" : "none";
     });
 }
 

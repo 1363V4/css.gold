@@ -8,14 +8,19 @@
         --gold-4: #ffc400;
         --gold-5: #B3A2DE;
     }
-
+    
     body {
         height: 100vh;
         width: 100vw;
         font-family: Times, sans-serif;
     }
-
+    
     @media (max-width: 610px) {
+        :root {
+            --phone: 1;
+            --m: 0.6rem;
+        }
+
         body {
             height: 91vh;
         }
@@ -31,39 +36,24 @@
         text-decoration: unset;
         color: unset;
     }
-
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     
     #links {
         background-color: var(--gold-3);
+        font-size: var(--l);
     }
     
     #links > * {
-        text-align: center;
         background-color: var(--gold-4);
-        container-type: inline-size;
-    }
-    
-    #links > * > * {
-        font-size: 5cqmin;
     }
     
     #texts {
         background-color: var(--gold-1);
     }
     
-    #texts > * {
+    .text > p {
         background-color: var(--gold-2);
-        container-type: size;
-    }
-    
-    #texts > * > * {
-        font-size: 5cqmin;
+        font-size: var(--xl);
+        text-align: center;
     }
     
     #arrow {

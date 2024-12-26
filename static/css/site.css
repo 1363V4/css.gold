@@ -24,7 +24,7 @@
 @media (max-width: 610px) {
     :root {
         --phone: 1;
-        --m: 0.6rem;
+        --m: 1rem;
     }
 
     .phone {
