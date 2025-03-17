@@ -12,7 +12,7 @@
     body {
         height: 100vh;
         width: 100vw;
-        font-family: Times, sans-serif;
+        font-family: math;
     }
     
     @media (max-width: 610px) {
@@ -44,6 +44,8 @@
     
     #links > * {
         background-color: var(--gold-4);
+        display: grid;
+        place-content: center;
     }
     
     #texts {
