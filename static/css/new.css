@@ -1,0 +1,31 @@
+@import url('gold2.css') layer(gold);
+
+
+:root {
+    --m: 1.5rem;
+}
+
+body {
+    background: bisque;
+    gap: 2rem;
+}
+
+h1 {
+    margin-top: var(--l);
+    + p {
+        font-style: italic;
+    }
+}
+
+.card {
+    outline: 1px solid cadetblue;
+    border-radius: 8px;
+    overflow: hidden;
+    resize: both;
+    p:first-child {
+        background: red;
+    }
+    p:last-child {
+        background: blue;
+    }
+}
