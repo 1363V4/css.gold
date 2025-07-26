@@ -6,22 +6,17 @@
 		margin: 0;
 		padding: 0;
         text-box-trim: trim-both;
+		text-wrap: pretty;
 	}
 	h1, h2, h3, h4, h5, h6 {
 		font-size: inherit;
 		font-weight: inherit;
-		text-wrap: balance;
 	}
 	a {
 		color: inherit;
 	}
-	table {
-		text-indent: 0;
-		border-color: inherit;
-		border-collapse: collapse;
-	}
     button {
-        cursor: pointer;
+		cursor: pointer;
     }
 	button, input, select {
 		font: inherit;
@@ -38,14 +33,21 @@
 	menu, ol, ul {
 		list-style: none;
 	}
+	hr {
+		border: none;
+		border-top: 1px solid currentColor;
+		width: 100%;
+	}
+	table {
+		text-indent: 0;
+		border-color: inherit;
+		border-collapse: collapse;
+	}
 	svg {
 		paint-order: stroke fill;
 	}
 	audio, canvas, embed, iframe, img, object, svg, video {
 		display: block;
-	}
-	@view-transition {
-		navigation: auto;
 	}
 }
 
@@ -53,6 +55,7 @@
 	:root {
 		--phi: calc((1 + sqrt(5)) / 2);
 		--m: 1rem;
+		--xxs: calc(var(--m) * pow(var(--phi), -3));
 		--xs: calc(var(--m) * pow(var(--phi), -2));
 		--s: calc(var(--m) * pow(var(--phi), -1));
 		--l: calc(var(--m) * pow(var(--phi), 1));
@@ -69,24 +72,31 @@
 	/* center shit */
 	.gc {
 		display: grid;
-        place-content: center;
-        place-items: center;
+		> * {
+			place-self: center;
+		}
     }
-
+	
 	/* stack shit */
     .gz {
 		display: grid;
+		> * {
+			grid-area: 1/1;
+		}
     }
-    .gz > * {
-		grid-area: 1/1;
-    }
-
+	
 	/* stretch shit */
 	.gs {
 		display: grid;
+		> * {
+			justify-self: stretch;
+		}
+	}
+	/* .gs {
+		display: grid;
 		align-content: stretch;
 		place-items: stretch;
-	}
+	} */
 
     /* it's dangerous to go alone, take this */
     .gq {
@@ -94,26 +104,26 @@
     }
 
 	/* golden grids */
-	.g01 {
+	.gg01 {
         display: grid;
         grid-template-columns: 1fr 1.618fr;
         grid-template-rows: 1fr;
     }
 	@container (max-width: 575px) {
-        .g01 {
+        .gg01 {
             display: grid;
 			grid-template-rows: 1fr 1.618fr;
 			grid-template-columns: 1fr;
 		}
 	}
-    .g10 {
+    .gg10 {
         display: grid;
         grid-template-columns: 1.618fr 1fr;
         grid-template-rows: 1fr;
     }
 
 	@container (max-width: 575px) {
-        .g10 {
+        .gg10 {
             display: grid;
 			grid-template-rows: 1.618fr 1fr;
 			grid-template-columns: 1fr;
@@ -123,12 +133,14 @@
 
 @layer utilities {
 	.fs {
-		max-width: 100dvi;
-		min-height: 100dvb;
+		width: 100dvi;
+		height: 100dvb;
 	}
 
-	.gw {
-		width: 61.8%;
+	@container (min-width: 576px) {
+		.gw {
+			width: 61.8cqi;
+		}
 	}
 
 	.gpx {

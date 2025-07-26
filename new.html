@@ -7,29 +7,120 @@
     <link rel="icon" href="static/img/gold.svg" type="image/svg+xml">
     <title>gold.css</title>
 </head>
-<body class="fs gc">
-    <h1 class="gtxl">gold.css</h1>
-    <p>the most useful little css thing ever</p>
-    <p>just slap that thing and run</p>
-    <h2 class="gtl">reset</h2>
-    <p>good, modern reset with no footguns</p>
-    <h2 class="gtl">center</h2>
-    <div class="gc card">
-        <p>ok</p>
-    </div>
-    <h2 class="gtl">full width</h2>
-    <div class="gw card">
-        <p>ok</p>
-    </div>
-    <h2 class="gtl">trigger</h2>
-    <div class="gq gs">
-        <div class="g01 card">
-            <p class="gc">ok</p>
-            <p class="gc">ok</p>
+<body class="gc gq">
+    <main class="gc gw">
+        <h1 class="gtxl">gold.css</h1>
+        <p>the most useful little css ever</p>
+        <p>just slap that thing and run</p>
+        <pre><code>@import url('gold2.css') layer(gold);</code></pre>
+        <hr>
+
+        <h2 class="gtl">css reset</h2>  
+        <p>good, modern reset with no footguns</p>
+        <p>put that "user-agent stylesheet" out of the way</p>
+        <hr>
+
+        <h2 class="gtl">gc: gold center</h2>
+        <p>you can finally center a div</p>
+        <pre><code>&lt;div class="gc"&gt;&lt;/div&gt;</code></pre>
+        <div class="gc card">
+            <div><p>wow</p></div>
         </div>
-    </div>
-    <div class="g10 card">
-        <p class="gc">ok</p>
-        <p class="gc">ok</p>
-    </div>
+        <hr>
+
+        <h2 class="gtl">gs: gold stretch</h2>
+        <p>fill the available space</p>
+        <pre><code>&lt;div class="gs"&gt;&lt;/div&gt;</code></pre>
+        <div class="gs card">
+            <div><p>wow</p></div>
+        </div>
+        <hr>
+        
+        <h2 class="gtl">gz: gold stack</h2>
+        <p>stack items on top of each other</p>
+        <pre><code>&lt;div class="gz"&gt;&lt;/div&gt;</code></pre>
+        <div id="stack" class="gz card">
+            <div></div>
+            <div></div>
+        </div>
+        <hr>
+        
+        <h2 class="gtl">gold width</h2>
+        <p>62% of screen size except on mobile</p>
+        <pre><code>&lt;div class="gw"&gt;&lt;/div&gt;</code></pre>
+        <div class="gq gc gs card">
+            <div class="gw"><p>wow</p></div>
+        </div>
+        <hr>
+        
+        <h2 class="gtl">gold grids</h2>
+        <p>cool grid: small space, big space, rotate on mobile</p>
+        <pre><code>&lt;div class="gg01"&gt;&lt;/div&gt;</code></pre>
+        <div class="gg01 card ggdemo">
+            <div class="gc"><p>wow</p></div>
+            <div class="gc"><p>wow</p></div>
+        </div>
+        <pre><code>&lt;div class="gg01"&gt;&lt;/div&gt;</code></pre>
+        <div class="gg10 card ggdemo">
+            <div class="gc"><p>wow</p></div>
+            <div class="gc"><p>wow</p></div>
+        </div>
+        <hr>
+        
+        <h2 class="gtl">important</h2>
+        <p>desktop/mobile stuff refers to a container</p>
+        <pre><code>&lt;div class="gq"&gt;&lt;/div&gt;</code></pre>
+        <p>use if children have "gw" or "gg"</p>
+        <hr>
+
+        <h2 class="gtl">why gold???</h2>
+        <p>the important part</p>
+        <p>"gold" because the design is modular and based on the golden ratio</p>
+        <h3 class="gtm">...what?</h3>
+        <ul>
+            <li>- we define a variable "m" equal to 1rem</li>
+            <li>- we then define "l", 60% bigger</li>
+            <li>- then "xl", 60% bigger than "l"</li>
+            <li>- and so on...</li>
+        </ul>
+        <p>this has 3 main benefits:</p>
+        <p>- you can reuse it anywhere in your css</p>
+        <p>- if you change var(--m), everything changes</p>
+        <p>- it's damn easy to understand</p>
+        <pre><code>div#gold {padding: var(--xl)}</code></pre>
+
+        <h2>freebies</h2>
+        <p>utilities, yeah!</p>
+        <p>we know you love them</p>
+        <p>choose your utility:</p>
+        <ul>
+            <li>gp for padding</li>
+            <li>gm for margin</li>
+            <li>gt for text</li>
+        </ul>
+        <p>choose your value:</p>
+        <ul>
+            <li>xxs</li>
+            <li>xs</li>
+            <li>s</li>
+            <li>m</li>
+            <li>l</li>
+            <li>xl</li>
+            <li>xxl</li>
+        </ul>
+        <p>and voilà:</p>
+        <pre><code>&lt;div class="gp-s gm-xl gt-xxl"&gt;&lt;/div&gt;</code></pre>
+        <hr>
+        
+        <h2 class="gtl">full screen</h2>
+        <p>nice freebie for overlays, combine with gc</p>
+        <pre><code>&lt;div class="fs"&gt;&lt;/div&gt;</code></pre>
+        <hr>
+        
+        <h2 class="gtl">ok let's go!!!</h2>
+        <p>what are you waiting for???</p>
+        <pre><code>github</code></pre>
+        <p>go go go !!!</p>
+        <p>gold.css a thousand years baby!!!</p>
+    </main>
 </body>
