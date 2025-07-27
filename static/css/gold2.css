@@ -143,24 +143,27 @@
 		}
 	}
 
-	.gpx {
-		padding-inline: 19%;
-	}
-	.gpy {
-		padding-block: 19%;
-	}
-	.gmx {
-		margin-inline: 19%;
-	}
-	.gmy {
-		margin-block: 19%;
-	}
-	
-	/* text shit */
-	.gtxs { font-size: var(--xs); }
-	.gts  { font-size: var(--s); }
-	.gtm  { font-size: var(--m); }
-	.gtl  { font-size: var(--l); }
-	.gtxl { font-size: var(--xl); }
-	.gtxxl { font-size: var(--xxl); }
+	/* padding utilities */
+	.gp-xs { padding: var(--xs); }
+	.gp-s  { padding: var(--s); }
+	.gp-m  { padding: var(--m); }
+	.gp-l  { padding: var(--l); }
+	.gp-xl { padding: var(--xl); }
+	.gp-xxl { padding: var(--xxl); }
+
+	/* margin utilities */
+	.gm-xs { margin: var(--xs); }
+	.gm-s  { margin: var(--s); }
+	.gm-m  { margin: var(--m); }
+	.gm-l  { margin: var(--l); }
+	.gm-xl { margin: var(--xl); }
+	.gm-xxl { margin: var(--xxl); }
+
+	/* text size utilities */
+	.gt-xs { font-size: var(--xs); }
+	.gt-s  { font-size: var(--s); }
+	.gt-m  { font-size: var(--m); }
+	.gt-l  { font-size: var(--l); }
+	.gt-xl { font-size: var(--xl); }
+	.gt-xxl { font-size: var(--xxl); }
 }
