@@ -5,8 +5,8 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
-        text-box-trim: trim-both;
 		text-wrap: pretty;
+		text-box-trim: trim-both;
 	}
 	h1, h2, h3, h4, h5, h6 {
 		font-size: inherit;
@@ -15,20 +15,20 @@
 	a {
 		color: inherit;
 	}
-    button {
-		cursor: pointer;
+    button, input[type="submit"], input[type="reset"] {
+        cursor: pointer;
     }
-	button, input, select {
+	button, input, select, textarea {
 		font: inherit;
 		color: inherit;
 		letter-spacing: inherit;
         background: unset;
 	}
-	input, select, textarea {
-		field-sizing: content;
-	}
 	input, progress, meter {
 		accent-color: currentColor;
+	}
+	select {
+		field-sizing: content;
 	}
 	menu, ol, ul {
 		list-style: none;
