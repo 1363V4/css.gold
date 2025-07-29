@@ -64,7 +64,7 @@
 	}
 	html {
         font-size: var(--m);
-		line-height: var(--l);
+		line-height: var(--m);
 	}
 }
 
@@ -92,11 +92,6 @@
 			justify-self: stretch;
 		}
 	}
-	/* .gs {
-		display: grid;
-		align-content: stretch;
-		place-items: stretch;
-	} */
 
     /* it's dangerous to go alone, take this */
     .gq {
@@ -144,6 +139,7 @@
 	}
 
 	/* padding utilities */
+	.gp-xxs { padding: var(--xxs); }
 	.gp-xs { padding: var(--xs); }
 	.gp-s  { padding: var(--s); }
 	.gp-m  { padding: var(--m); }
@@ -152,6 +148,7 @@
 	.gp-xxl { padding: var(--xxl); }
 
 	/* margin utilities */
+	.gm-xxs { margin: var(--xxs); }
 	.gm-xs { margin: var(--xs); }
 	.gm-s  { margin: var(--s); }
 	.gm-m  { margin: var(--m); }
@@ -160,6 +157,7 @@
 	.gm-xxl { margin: var(--xxl); }
 
 	/* text size utilities */
+	.gt-xxs { font-size: var(--xxs); }
 	.gt-xs { font-size: var(--xs); }
 	.gt-s  { font-size: var(--s); }
 	.gt-m  { font-size: var(--m); }
